@@ -33,62 +33,47 @@
                  alt="Top Right Image">
         </div>        
         
-
         <!-- Image Buttons -->
         <div class="grid grid-cols-1 lg:grid-cols-2 py-8">
             <div class="grid grid-cols-4 md:grid-cols-7 lg:grid-cols-7 gap-4">
-                <button class="border border-4 border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20 active">
-                    <img class="w-full h-full object-cover rounded-md" 
+                <button class="border border-4 border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20 active">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
                          src="./img/Banner/1742803392-71rCYfjKIKL._AC_SL1500_.webp" alt="">
                 </button>
-                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md" 
+                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
                          src="./img/Banner/1742803396-71Lg99T+wXL._AC_SL1500_.webp" alt="">
                 </button>
-                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md" 
-                         src="./img/Banner/1742803399-61dK+DPgBNL._AC_SL1500_.webp" alt="">
+                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
+                         src="./img/Banner/1742803399-61dK+DPgBNL._AC_SL1500_.webp" 
+                         alt="">
                 </button>
-                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md" 
+                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
                          src="./img/Banner/1742803403-7108kvu8YxL._AC_SL1500_.webp" alt="">
                 </button>
-                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md" 
+                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
                          src="./img/Banner/1742803408-51TP8z+ZgRL._AC_SL1500_.webp" alt="">
                 </button>
-                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md" 
+                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
                          src="./img/Banner/1742803385-717o8ucM7GL._AC_SL1500_.webp" alt="">
                 </button>
-                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md" 
+                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
                          src="./img/Banner/1742803416-61+U2PkGf-L._AC_SL1500_.webp" alt="">
                 </button>
             </div>
         </div>
+        
+        <div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                <div class="bg-[#F95154] h-2.5 rounded-full dark:bg-gray-300" style="width: 12%"></div>
+              </div>  
+        </div>
     </div>
-
-    <script>
-        const mainImage = document.getElementById("mainImage");
-        const buttons = document.querySelectorAll("button");
-
-        buttons.forEach(button => {
-            button.addEventListener("click", function () {
-                // Change the main image
-                const imgSrc = this.querySelector("img").src;
-                mainImage.src = imgSrc;
-
-                // Remove border-4 from all buttons
-                buttons.forEach(btn => btn.classList.remove("border-4"));
-
-                // Add border-4 to the clicked button
-                this.classList.add("border-4");
-            });
-        });
-    </script>
-
-
 
     <!-- Main JavaScript -->
     <script src="./js/script.js"></script>
