@@ -25,3 +25,30 @@ setInterval(() => {
   display.textContent = `${m}:${s < 10 ? "0" : ""}${s} min avant la fin de l'offre`;
   timer > 0 ? timer-- : display.textContent = "Offre expirée";
 }, 1000);
+
+
+ // Select the button inside the #hide-button div
+const button = document.querySelector("#hide-button button");
+
+// Function to check the scroll position
+function checkScroll() {
+    const showButtonDiv = document.getElementById("show-button");
+    const hideButtonDiv = document.getElementById("hide-button");
+
+    // Get the positions of the divs
+    const showButtonPosition = showButtonDiv.getBoundingClientRect().top;
+    const hideButtonPosition = hideButtonDiv.getBoundingClientRect().top;
+
+    // Check if the page is scrolled past the "show" div and not yet the "hide" div
+    if (showButtonPosition < window.innerHeight && hideButtonPosition > window.innerHeight) {
+        button.style.display = "block"; // Show button
+    } else {
+        button.style.display = "none"; // Hide button
+    }
+}
+
+// Add scroll event listener
+window.addEventListener("scroll", checkScroll);
+
+// Call the function once on load to ensure the button is correctly displayed initially
+checkScroll();
