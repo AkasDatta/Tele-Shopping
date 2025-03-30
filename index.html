@@ -13,13 +13,78 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
 </head>
 <body >
-<!-- Navbar -->
-<div class="px-4 md:px-12 lg:px-12 xl:px-24 py-6 flex justify-center">
-    <img src="./img/Banner/logo.webp" class="w-52 h-auto object-contain" alt="Logo">
-</div>
+    <!-- Navbar -->
+    <div class="px-4 md:px-12 lg:px-12 xl:px-24 py-6 flex justify-center">
+        <img src="./img/Banner/logo.webp" class="w-52 h-auto object-contain" alt="Logo">
+    </div>
+
+    <!-- Banner -->
+    <div class="px-4 md:px-12 lg:px-12 xl:px-24">
+        <!-- Main Image -->
+        <div class="flex justify-center">
+            <img id="mainImage" 
+                 src="./img/Banner/1742803396-71Lg99T+wXL._AC_SL1500_.webp" 
+                 class="w-72 lg:w-[400px] h-72 lg:h-[400px] object-cover rounded-md" 
+                 alt="Main Image">
+        </div>
+        
+
+        <!-- Image Buttons -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 py-8">
+            <div class="grid grid-cols-4 md:grid-cols-7 lg:grid-cols-7 gap-4">
+                <button class="border border-4 border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20 active">
+                    <img class="w-full h-full object-cover rounded-md" 
+                         src="./img/Banner/1742803392-71rCYfjKIKL._AC_SL1500_.webp" alt="">
+                </button>
+                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md" 
+                         src="./img/Banner/1742803396-71Lg99T+wXL._AC_SL1500_.webp" alt="">
+                </button>
+                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md" 
+                         src="./img/Banner/1742803399-61dK+DPgBNL._AC_SL1500_.webp" alt="">
+                </button>
+                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md" 
+                         src="./img/Banner/1742803403-7108kvu8YxL._AC_SL1500_.webp" alt="">
+                </button>
+                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md" 
+                         src="./img/Banner/1742803408-51TP8z+ZgRL._AC_SL1500_.webp" alt="">
+                </button>
+                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md" 
+                         src="./img/Banner/1742803385-717o8ucM7GL._AC_SL1500_.webp" alt="">
+                </button>
+                <button class="border border-gray-400 rounded-md w-16 h-16 lg:w-20 lg:h-20">
+                    <img class="w-full h-full object-cover rounded-md" 
+                         src="./img/Banner/1742803416-61+U2PkGf-L._AC_SL1500_.webp" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const mainImage = document.getElementById("mainImage");
+        const buttons = document.querySelectorAll("button");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", function () {
+                // Change the main image
+                const imgSrc = this.querySelector("img").src;
+                mainImage.src = imgSrc;
+
+                // Remove border-4 from all buttons
+                buttons.forEach(btn => btn.classList.remove("border-4"));
+
+                // Add border-4 to the clicked button
+                this.classList.add("border-4");
+            });
+        });
+    </script>
 
 
-    
+
     <!-- Main JavaScript -->
     <script src="./js/script.js"></script>
 </body>
