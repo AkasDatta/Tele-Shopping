@@ -1,0 +1,23 @@
+@keyframes moveRight {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100px); opacity: 0; }
+}
+
+@keyframes moveLeft {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-move-right {
+    animation: moveRight 0.5s forwards;
+}
+
+.animate-move-left {
+    animation: moveLeft 0.5s forwards;
+}
+
+
+.moved {
+    transform: translateX(200px);
+    transition: transform 0.3s ease-in-out;
+}

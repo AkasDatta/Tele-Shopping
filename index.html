@@ -20,52 +20,86 @@
 
     <!-- Banner -->
     <div class="px-4 md:px-12 lg:px-12 xl:px-24">
-        <!-- Main Image -->
-        <div class="relative">
-            <div class="flex justify-center">
-                <img id="mainImage" 
-                     src="./img/Banner/1742803396-71Lg99T+wXL._AC_SL1500_.webp" 
-                     class="w-72 lg:w-[400px] h-72 lg:h-[400px] object-cover rounded-md" 
-                     alt="Main Image">
+        <div>
+            <!-- Main Image -->
+            <div class="relative">
+                <div class="flex justify-center">
+                    <img id="mainImage" 
+                        src="./img/Banner/1742803396-71Lg99T+wXL._AC_SL1500_.webp" 
+                        class="w-72 lg:w-[400px] h-72 lg:h-[400px] object-cover rounded-md" 
+                        alt="Main Image">
+                </div>
+                <img src="./img/Banner/1707565906-Design sans titre (39).webp" 
+                    class="w-16 absolute top-0 right-0" 
+                    alt="Top Right Image">
+            </div>        
+            
+            <!-- Image Buttons -->
+            <div class="py-8 overflow-x-auto">
+                <div class="flex gap-4 transition-transform duration-300 overflow-x-auto whitespace-nowrap flex-nowrap min-w-max">
+                    <button onclick="moveContainer(this)" data-translate-lg="36rem" data-translate-sm="8rem"
+                    class="button border border-4 border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20 transition-transform duration-300">
+                        <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0"
+                            src="./img/Banner/1742803392-71rCYfjKIKL._AC_SL1500_.webp" alt="">
+                    </button>
+                    <button onclick="moveContainer(this)" data-translate-lg="32rem" data-translate-sm="4rem" class="button border border-4 border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20 transition-transform duration-300">
+                        <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" src="./img/Banner/1742803396-71Lg99T+wXL._AC_SL1500_.webp" alt="">
+                    </button>
+                    <button onclick="moveContainer(this)" data-translate-lg="28rem" data-translate-sm="0rem"
+                    class="button border border-4 border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20 transition-transform duration-300">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0"
+                        src="./img/Banner/1742803399-61dK+DPgBNL._AC_SL1500_.webp" alt="">
+                </button>
+                
+                <button onclick="moveContainer(this)" data-translate-lg="24rem" data-translate-sm="-4rem"
+                    class="button border border-4 border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20 transition-transform duration-300">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0"
+                        src="./img/Banner/1742803403-7108kvu8YxL._AC_SL1500_.webp" alt="">
+                </button>
+                
+                <button onclick="moveContainer(this)" data-translate-lg="20rem" data-translate-sm="-8rem"
+                    class="button border border-4 border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20 transition-transform duration-300">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0"
+                        src="./img/Banner/1742803408-51TP8z+ZgRL._AC_SL1500_.webp" alt="">
+                </button>
+                
+                <button onclick="moveContainer(this)" data-translate-lg="16rem" data-translate-sm="-12rem"
+                    class="button border border-4 border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20 transition-transform duration-300">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0"
+                        src="./img/Banner/1742803385-717o8ucM7GL._AC_SL1500_.webp" alt="">
+                </button>
+                
+                <button onclick="moveContainer(this)" data-translate-lg="12rem" data-translate-sm="-16rem"
+                    class="button border border-4 border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20 transition-transform duration-300">
+                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0"
+                        src="./img/Banner/1742803416-61+U2PkGf-L._AC_SL1500_.webp" alt="">
+                </button>
+                
+                </div>
             </div>
-            <img src="./img/Banner/1707565906-Design sans titre (39).webp" 
-                 class="w-16 absolute top-0 right-0" 
-                 alt="Top Right Image">
-        </div>        
-        
-        <!-- Image Buttons -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 py-8">
-            <div class="grid grid-cols-4 md:grid-cols-7 lg:grid-cols-7 gap-4">
-                <button class="border border-4 border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20 active">
-                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
-                         src="./img/Banner/1742803392-71rCYfjKIKL._AC_SL1500_.webp" alt="">
-                </button>
-                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
-                         src="./img/Banner/1742803396-71Lg99T+wXL._AC_SL1500_.webp" alt="">
-                </button>
-                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
-                         src="./img/Banner/1742803399-61dK+DPgBNL._AC_SL1500_.webp" 
-                         alt="">
-                </button>
-                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
-                         src="./img/Banner/1742803403-7108kvu8YxL._AC_SL1500_.webp" alt="">
-                </button>
-                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
-                         src="./img/Banner/1742803408-51TP8z+ZgRL._AC_SL1500_.webp" alt="">
-                </button>
-                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
-                         src="./img/Banner/1742803385-717o8ucM7GL._AC_SL1500_.webp" alt="">
-                </button>
-                <button class="border border-gray-400 hover:border-2 rounded-md w-16 h-16 lg:w-20 lg:h-20">
-                    <img class="w-full h-full object-cover rounded-md transition duration-200 blur-[1px] hover:blur-0 focus:blur-0" 
-                         src="./img/Banner/1742803416-61+U2PkGf-L._AC_SL1500_.webp" alt="">
-                </button>
-            </div>
+            
+            
+            <script>
+                function moveContainer(button) {
+                    let flexContainer = button.parentElement;
+                    let isLargeScreen = window.innerWidth >= 1024; // Tailwind's lg: starts at 1024px
+
+                    // Get the appropriate translation value based on screen size
+                    let translationValue = isLargeScreen
+                        ? button.getAttribute("data-translate-lg")
+                        : button.getAttribute("data-translate-sm");
+
+                    // Remove any existing translate-x class
+                    flexContainer.classList.remove(
+                        "translate-x-[36rem]", "translate-x-[2rem]", "translate-x-[10rem]",
+                        "translate-x-[20rem]", "translate-x-[30rem]", "translate-x-[5rem]", "translate-x-[15rem]"
+                    );
+
+                    // Apply new translation dynamically
+                    flexContainer.classList.add(`translate-x-[${translationValue}]`);
+                }
+            </script>
+            
         </div>
         
         <!-- Timer  -->
@@ -131,7 +165,7 @@
         <!-- Start scroll code  -->
         <div class="px-4 md:px-12 lg:px-12 xl:px-24 py-6">
             <div id="show-button">
-                <h2 class="text-xl md:text-3xl lg:text-3xl font-bold text-center">Disque d'Équilibre pour Enfants</h2>
+                <h2 class="text-xl md:text-3xl lg:text-3xl font-bold text-center">Disque d’Équilibre & Dôme d’Escalade</h2>
                 <p class="text-lg px-8 md:px-20 lg:px-48 py-3 lg:py-5  text-center">Un jouet 2 en 1 conçu pour les enfants ! Utilisable <b>à l’intérieur comme à l’extérieur</b>, ce disque permet de se balancer ou de grimper pour des heures de jeu actives.</p>
                 <div class="flex justify-center pb-0 lg:pb-5">
                     <img src="./img/1742804105-f8364bfe-8d2b-407b-9918-488ef648001d.__CR0,0,970,300_PT0_SX970_V1___.webp" class="rounded-md" alt="">
@@ -184,7 +218,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- Review section -->
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#F2F2F2] px-4 md:px-12 lg:px-12 xl:px-24 pb-6">
@@ -245,7 +278,6 @@
                 <p class="flex gap-2 flex-wrap text-gray-400">Posté sur <img src="./img/1652134221-trustpilot.svg" alt=""></p>
             </div>
          </div>
-
     
         <!-- Your demo section button -->
         <div class="bg-white px-4 md:px-12 lg:px-12 xl:px-24 py-6">
@@ -269,7 +301,6 @@
             </div>
         </div>
         
-         
         <!-- end scroll  -->
     </div>
     
@@ -310,5 +341,26 @@
 
     <!-- Main JavaScript -->
     <script src="./js/script.js"></script>
+    <script>
+        function moveContainer(button) {
+            let flexContainer = button.parentElement;
+            let isLargeScreen = window.innerWidth >= 1024; // Tailwind's lg: starts at 1024px
+
+            // Get the appropriate translation value based on screen size
+            let translationValue = isLargeScreen
+                ? button.getAttribute("data-translate-lg")
+                : button.getAttribute("data-translate-sm");
+
+            // Remove any existing translate-x class
+            flexContainer.classList.remove(
+                "translate-x-[36rem]", "translate-x-[2rem]", "translate-x-[10rem]",
+                "translate-x-[20rem]", "translate-x-[30rem]", "translate-x-[5rem]", "translate-x-[15rem]"
+            );
+
+            // Apply new translation dynamically
+            flexContainer.classList.add(`translate-x-[${translationValue}]`);
+        }
+
+    </script>
 </body>
 </html>
